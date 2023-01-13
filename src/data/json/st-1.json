@@ -1,5 +1,6 @@
-{
-  "Biyomon": {
+[
+  {
+    "name": "Biyomon",
     "setNumber": "ST1-02",
     "stage": "rookie",
     "level": "3",
@@ -8,7 +9,8 @@
     "digivolutionCost": "0",
     "color": "red"
   },
-  "Agumon": {
+  {
+    "name": "Agumon",
     "setNumber": "ST1-03",
     "stage": "rookie",
     "level": "3",
@@ -17,7 +19,8 @@
     "digivolutionCost": "0",
     "color": "red"
   },
-  "Dracomon": {
+  {
+    "name": "Dracomon",
     "setNumber": "ST1-04",
     "stage": "rookie",
     "level": "3",
@@ -26,7 +29,8 @@
     "digivolutionCost": "0",
     "color": "red"
   },
-  "Birdramon": {
+  {
+    "name": "Birdramon",
     "setNumber": "ST1-05",
     "stage": "champion",
     "level": "4",
@@ -35,7 +39,8 @@
     "digivolutionCost": "2",
     "color": "red"
   },
-  "Coredramon": {
+  {
+    "name": "Coredramon",
     "setNumber": "ST1-06",
     "stage": "champion",
     "level": "4",
@@ -44,7 +49,8 @@
     "digivolutionCost": "2",
     "color": "red"
   },
-  "Greymon": {
+  {
+    "name": "Greymon",
     "setNumber": "ST1-07",
     "stage": "champion",
     "level": "4",
@@ -53,7 +59,8 @@
     "digivolutionCost": "2",
     "color": "red"
   },
-  "Garudamon": {
+  {
+    "name": "Garudamon",
     "setNumber": "ST1-08",
     "stage": "ultimate",
     "level": "5",
@@ -62,7 +69,8 @@
     "digivolutionCost": "3",
     "color": "red"
   },
-  "MetalGreymon": {
+  {
+    "name": "MetalGreymon",
     "setNumber": "ST1-09",
     "stage": "ultimate",
     "level": "5",
@@ -71,7 +79,8 @@
     "digivolutionCost": "3",
     "color": "red"
   },
-  "Phoenixmon": {
+  {
+    "name": "Phoenixmon",
     "setNumber": "ST1-10",
     "stage": "mega",
     "level": "6",
@@ -80,7 +89,8 @@
     "digivolutionCost": "2",
     "color": "red"
   },
-  "WarGreymon": {
+  {
+    "name": "WarGreymon",
     "setNumber": "ST1-11",
     "stage": "mega",
     "level": "6",
@@ -89,4 +99,4 @@
     "digivolutionCost": "4",
     "color": "red"
   }
-}
+]
