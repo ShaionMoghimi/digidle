@@ -1,0 +1,11 @@
+name,setNumber,stage,level,dp,playCost,digivolutionCost,color
+Biyomon,ST1-02,rookie,3,3000,2,0,red
+Agumon,ST1-03,rookie,3,2000,3,0,red
+Dracomon,ST1-04,rookie,3,4000,3,0,red
+Birdramon,ST1-05,champion,4,5000,4,2,red
+Coredramon,ST1-06,champion,4,6000,5,2,red
+Greymon,ST1-07,champion,4,4000,5,2,red
+Garudamon,ST1-08,ultimate,5,7000,6,3,red
+MetalGreymon,ST1-09,ultimate,5,7000,7,3,red
+Phoenixmon,ST1-10,mega,6,12000,10,2,red
+WarGreymon,ST1-11,mega,6,12000,12,4,red

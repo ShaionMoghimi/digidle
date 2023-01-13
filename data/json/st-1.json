@@ -1,0 +1,92 @@
+{
+  "Biyomon": {
+    "setNumber": "ST1-02",
+    "stage": "rookie",
+    "level": "3",
+    "dp": "3000",
+    "playCost": "2",
+    "digivolutionCost": "0",
+    "color": "red"
+  },
+  "Agumon": {
+    "setNumber": "ST1-03",
+    "stage": "rookie",
+    "level": "3",
+    "dp": "2000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "red"
+  },
+  "Dracomon": {
+    "setNumber": "ST1-04",
+    "stage": "rookie",
+    "level": "3",
+    "dp": "4000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "red"
+  },
+  "Birdramon": {
+    "setNumber": "ST1-05",
+    "stage": "champion",
+    "level": "4",
+    "dp": "5000",
+    "playCost": "4",
+    "digivolutionCost": "2",
+    "color": "red"
+  },
+  "Coredramon": {
+    "setNumber": "ST1-06",
+    "stage": "champion",
+    "level": "4",
+    "dp": "6000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "red"
+  },
+  "Greymon": {
+    "setNumber": "ST1-07",
+    "stage": "champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "red"
+  },
+  "Garudamon": {
+    "setNumber": "ST1-08",
+    "stage": "ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "6",
+    "digivolutionCost": "3",
+    "color": "red"
+  },
+  "MetalGreymon": {
+    "setNumber": "ST1-09",
+    "stage": "ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "7",
+    "digivolutionCost": "3",
+    "color": "red"
+  },
+  "Phoenixmon": {
+    "setNumber": "ST1-10",
+    "stage": "mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "10",
+    "digivolutionCost": "2",
+    "color": "red"
+  },
+  "WarGreymon": {
+    "setNumber": "ST1-11",
+    "stage": "mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "12",
+    "digivolutionCost": "4",
+    "color": "red"
+  }
+}
