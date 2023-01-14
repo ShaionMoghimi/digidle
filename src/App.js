@@ -2,16 +2,22 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import st1 from './data/json/st-1.json';
 import { useState } from 'react';
-import { Col, Container, Form, Row } from 'react-bootstrap';
+import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
+import { ArrowDown, ArrowUp, ArrowUpCircleFill, Check, CheckCircleFill, XCircleFill } from 'react-bootstrap-icons';
+
+const a = Math.floor(Math.random() * st1.length);
 
 function App() {
-  const target = st1[0];
+  const target = st1[a];
   const [name, setName] = useState("");
   const [level, setLevel] = useState("");
+  const [levelIcon, setLevelIcon] = useState();
+  const [dpIcon, setDpIcon] = useState();
   const [dp, setDp] = useState("");
   const [correct, setCorrect] = useState(false);
-  const [attempts, setAttempts] = useState(0);
+  const [attempts, setAttempts] = useState(1);
+  const [guesses] = useState([]);
 
   const funcs = {
     "name": setName,
@@ -25,6 +31,10 @@ function App() {
     "dp": dp,
   }
 
+  const onNameChange = (value) => {
+    setName(value);
+  }
+
   const inputChangeHandler = (field, value) => {
     console.log(value);
     filter[field] = value;
@@ -33,10 +43,31 @@ function App() {
 
   const checkName = () => {
     setAttempts(attempts + 1);
-    if (name.toLowerCase() === target.name.toLowerCase())
+    let correctText = "";
+    if (name.toLowerCase() === target.name.toLowerCase()){ 
       setCorrect(true);
-    else
+      correctText = "Correct!";
+    }
+    else {
       setCorrect(false);
+      if (parseInt(level) > parseInt(target.level))
+        setLevelIcon(<ArrowDown color='red'/>);
+      else if (parseInt(level) < parseInt(target.level))
+        setLevelIcon(<ArrowUp color='red'/>);
+      else 
+        setLevelIcon(<CheckCircleFill color='green' />);
+
+      if (parseInt(dp) > parseInt(target.dp))
+        setDpIcon(<ArrowDown color='red'/>);
+      else if (parseInt(dp) < parseInt(target.dp))
+        setDpIcon(<ArrowUpCircleFill color='red' />);
+      else 
+        setDpIcon(<CheckCircleFill color='green' />);
+      correctText = "Incorrect";
+    }
+
+    const guess = "Attempt " + attempts + ": " + name + " : " + correctText;
+    guesses.push(guess);
   }
 
   const checkEnter = (e) => {
@@ -46,7 +77,7 @@ function App() {
     }
   };
 
-  console.log(filter);
+  console.log(guesses);
 
   const filteredDigimon = st1.filter((digimon) => {
     for (const key in filter) {
@@ -58,6 +89,7 @@ function App() {
   const names = filteredDigimon.map((digimon) => digimon.name);
   const levels = [...new Set(filteredDigimon.map((digimon) => digimon.level))];
   const dps = [...new Set(filteredDigimon.map((digimon) => digimon.dp))];
+
   return (
     <div className="App">
       <header className="App-header">
@@ -71,7 +103,7 @@ function App() {
                   <Typeahead
                     options={names}
                     placeholder="Type a digimon's name"
-                    onChange={(option) => setName(option[0])}
+                    onChange={(option) => onNameChange(option[0])}
                     onInputChange={(e) => setName(e)}
                     onKeyDown={checkEnter}
                   />
@@ -86,7 +118,9 @@ function App() {
               <Col>
                 <Form.Group>
                   <Form.Label>Level</Form.Label>
+                  <Form.Label>{levelIcon}</Form.Label>
                   <Typeahead
+                    selected={level}
                     options={levels}
                     placeholder="Level"
                     onChange={(option) => inputChangeHandler("level", option[0])}
@@ -97,6 +131,7 @@ function App() {
               <Col>
                 <Form.Group>
                   <Form.Label>DP</Form.Label>
+                  <Form.Label>{dpIcon}</Form.Label>
                   <Typeahead
                     options={dps}
                     placeholder="DP"
@@ -107,9 +142,13 @@ function App() {
               </Col>
             </Row>
           </Form>
+          <Button onClick={checkName}>
+            Check!
+          </Button>
         </Container>
-        {correct && <p>That's correct!</p>}
-        {attempts > 0 && !correct && <p>Wrong, try again!</p>}
+        {guesses.map((guess, i) => {
+          return <p>{guess}</p>
+        })}
       </header>
     </div>
   );
