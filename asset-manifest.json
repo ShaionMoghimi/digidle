@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/digidle/static/css/main.ac365c59.css",
-    "main.js": "/digidle/static/js/main.91a188da.js",
+    "main.js": "/digidle/static/js/main.75e98e97.js",
     "static/js/787.c4482faa.chunk.js": "/digidle/static/js/787.c4482faa.chunk.js",
     "index.html": "/digidle/index.html",
     "main.ac365c59.css.map": "/digidle/static/css/main.ac365c59.css.map",
-    "main.91a188da.js.map": "/digidle/static/js/main.91a188da.js.map",
+    "main.75e98e97.js.map": "/digidle/static/js/main.75e98e97.js.map",
     "787.c4482faa.chunk.js.map": "/digidle/static/js/787.c4482faa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac365c59.css",
-    "static/js/main.91a188da.js"
+    "static/js/main.75e98e97.js"
   ]
 }
