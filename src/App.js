@@ -5,7 +5,6 @@ import bt01 from './data/json/bt01-03.1.5.json';
 import { useState } from 'react';
 import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
-import { ArrowDown, ArrowUp, ArrowUpCircleFill, Check, CheckCircleFill, XCircleFill } from 'react-bootstrap-icons';
 
 const st1 = st0.concat(bt01);
 
@@ -16,24 +15,13 @@ function App() {
   const [name, setName] = useState("");
   const [level, setLevel] = useState("");
   const [color, setColor] = useState("");
+  const [num, setNum] = useState("");
   const [set, setSet] = useState("");
   const [stage, setStage] = useState("");
   const [dp, setDp] = useState("");
   const [correct, setCorrect] = useState(false);
   const [attempts, setAttempts] = useState(1);
   const [guesses] = useState([]);
-
-  const funcs = {
-    "name": setName,
-    "level": setLevel,
-    "dp": setDp,
-  };
-
-  const filter = {
-    "name": name,
-    "level": level,
-    "dp": dp,
-  }
 
   const clearAttributes = () => {
     setColor("");
@@ -44,11 +32,13 @@ function App() {
 
   const onNameChange = (value) => {
     if (value && value.length > 0) {
-      const [name, set] = value.split(" | ");
+      const [name, setValue] = value.split(" | ");
+      const [set, num] = setValue.split("-");
       setName(name);
+      setNum(num);
       setSet(set);
       const digi = st1.filter((digimon) =>
-        digimon.name === name && digimon.setNumber === set
+        digimon.name === name && digimon.setNumber === (set + "-" + num)
       );
       if (digi.length === 0) {
         clearAttributes();
@@ -64,11 +54,6 @@ function App() {
     }
   }
 
-  const inputChangeHandler = (field, value) => {
-    filter[field] = value;
-    funcs[field](value);
-  }
-
   const checkName = () => {
     setAttempts(attempts + 1);
     if (name.toLowerCase() === target.name.toLowerCase() && set === target.setNumber) {
@@ -77,13 +62,15 @@ function App() {
     else {
       setCorrect(false);
     }
+    const [s, n] = target.setNumber.split("-");
     const guess = {
       name: [name, name === target.name],
       color: [color, color === target.color],
       stage: [stage, stage === target.stage],
       level: [level, level === target.level, level > target.level ? "↓" : "↑"],
       dp: [dp, dp === target.dp, dp > target.dp ? "↓" : "↑"],
-      set: [set, set === target.setNumber],
+      set: [set, set === s],
+      num: [num, num === n, num > n ? "↓" : "↑"],
     }
     guesses.push(guess);
   }
@@ -155,6 +142,7 @@ function App() {
             <tr style={{ color: 'white' }}>
               <th>Name</th>
               <th>Set</th>
+              <th>Number</th>
               <th>Color</th>
               <th>Stage</th>
               <th>Level</th>
@@ -165,6 +153,9 @@ function App() {
                 <tr>
                   <td style={{ color: guess.name[1] ? 'green' : 'red' }}>{guess.name[0]}</td>
                   <td style={{ color: guess.set[1] ? 'green' : 'red' }}>{guess.set[0]}</td>
+                  <td style={{ color: guess.num[1] ? 'green' : 'red' }}>
+                    {guess.num[0]}{guess.num[1] ? "" : guess.num[2]}
+                  </td>
                   <td style={{ color: guess.color[1] ? 'green' : 'red' }}>{guess.color[0]}</td>
                   <td style={{ color: guess.stage[1] ? 'green' : 'red' }}>{guess.stage[0]}</td>
                   <td style={{ color: guess.level[1] ? 'green' : 'red' }}>
