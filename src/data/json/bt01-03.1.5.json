@@ -1,0 +1,1112 @@
+[
+  {
+    "name": "GranKuwagamon",
+    "setNumber": "BT1-083",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "11000",
+    "playCost": "13",
+    "digivolutionCost": "4",
+    "color": "Green"
+  },
+  {
+    "name": "Biyomon",
+    "setNumber": "BT2-010",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "2000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Red"
+  },
+  {
+    "name": "Vorvomon",
+    "setNumber": "BT2-011",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "5000",
+    "playCost": "4",
+    "digivolutionCost": "0",
+    "color": "Red"
+  },
+  {
+    "name": "Birdramon",
+    "setNumber": "BT2-012",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "3000",
+    "playCost": "4",
+    "digivolutionCost": "2",
+    "color": "Red"
+  },
+  {
+    "name": "Lavorvomon",
+    "setNumber": "BT2-014",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "6000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Red"
+  },
+  {
+    "name": "Garudamon",
+    "setNumber": "BT2-015",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "6",
+    "digivolutionCost": "3",
+    "color": "Red"
+  },
+  {
+    "name": "Lavogaritamon",
+    "setNumber": "BT2-016",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "8000",
+    "playCost": "7",
+    "digivolutionCost": "2",
+    "color": "Red"
+  },
+  {
+    "name": "Phoenixmon",
+    "setNumber": "BT2-019",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "11000",
+    "playCost": "11",
+    "digivolutionCost": "3",
+    "color": "Red"
+  },
+  {
+    "name": "Veemon",
+    "setNumber": "BT2-021",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "2000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Blue"
+  },
+  {
+    "name": "Betamon",
+    "setNumber": "BT2-022",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "5000",
+    "playCost": "3",
+    "digivolutionCost": "1",
+    "color": "Blue"
+  },
+  {
+    "name": "Gomamon",
+    "setNumber": "BT2-023",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "2000",
+    "playCost": "4",
+    "digivolutionCost": "0",
+    "color": "Blue"
+  },
+  {
+    "name": "Seadramon",
+    "setNumber": "BT2-024",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "3",
+    "digivolutionCost": "2",
+    "color": "Blue"
+  },
+  {
+    "name": "Ikkakumon",
+    "setNumber": "BT2-025",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "3000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Blue"
+  },
+  {
+    "name": "Veedramon",
+    "setNumber": "BT2-026",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "5000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Blue"
+  },
+  {
+    "name": "Zudomon",
+    "setNumber": "BT2-027",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "9000",
+    "playCost": "6",
+    "digivolutionCost": "3",
+    "color": "Blue"
+  },
+  {
+    "name": "AeroVeedramon",
+    "setNumber": "BT2-028",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "8",
+    "digivolutionCost": "3",
+    "color": "Blue"
+  },
+  {
+    "name": "MegaSeadramon",
+    "setNumber": "BT2-029",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "8000",
+    "playCost": "8",
+    "digivolutionCost": "3",
+    "color": "Blue"
+  },
+  {
+    "name": "Vikemon",
+    "setNumber": "BT2-031",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "12",
+    "digivolutionCost": "4",
+    "color": "Blue"
+  },
+  {
+    "name": "UlforceVeedramon",
+    "setNumber": "BT2-032",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "11000",
+    "playCost": "13",
+    "digivolutionCost": "3",
+    "color": "Blue"
+  },
+  {
+    "name": "Agumon",
+    "setNumber": "BT2-033",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "3000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Yellow"
+  },
+  {
+    "name": "Salamon",
+    "setNumber": "BT2-034",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "2000",
+    "playCost": "4",
+    "digivolutionCost": "0",
+    "color": "Yellow"
+  },
+  {
+    "name": "GeoGreymon",
+    "setNumber": "BT2-035",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "4",
+    "digivolutionCost": "2",
+    "color": "Yellow"
+  },
+  {
+    "name": "Gatomon",
+    "setNumber": "BT2-036",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "3000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Yellow"
+  },
+  {
+    "name": "Angewomon",
+    "setNumber": "BT2-037",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "10000",
+    "playCost": "7",
+    "digivolutionCost": "3",
+    "color": "Yellow"
+  },
+  {
+    "name": "RizeGreymon",
+    "setNumber": "BT2-038",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "8",
+    "digivolutionCost": "3",
+    "color": "Yellow"
+  },
+  {
+    "name": "Ophanimon",
+    "setNumber": "BT2-040",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "11000",
+    "playCost": "12",
+    "digivolutionCost": "3",
+    "color": "Yellow"
+  },
+  {
+    "name": "ShineGreymon",
+    "setNumber": "BT2-041",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "11000",
+    "playCost": "12",
+    "digivolutionCost": "4",
+    "color": "Yellow"
+  },
+  {
+    "name": "Argomon",
+    "setNumber": "BT2-042",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "3000",
+    "playCost": "2",
+    "digivolutionCost": "0",
+    "color": "Green"
+  },
+  {
+    "name": "Argomon",
+    "setNumber": "BT2-045",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "5000",
+    "playCost": "6",
+    "digivolutionCost": "2",
+    "color": "Green"
+  },
+  {
+    "name": "Argomon",
+    "setNumber": "BT2-047",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "6000",
+    "playCost": "8",
+    "digivolutionCost": "3",
+    "color": "Green"
+  },
+  {
+    "name": "Argomon",
+    "setNumber": "BT2-050",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "11000",
+    "playCost": "12",
+    "digivolutionCost": "5",
+    "color": "Green"
+  },
+  {
+    "name": "BlackWarGreymon",
+    "setNumber": "BT2-112",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "13",
+    "digivolutionCost": "4",
+    "color": "Black"
+  },
+  {
+    "name": "Agumon",
+    "setNumber": "BT3-007",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "4000",
+    "playCost": "2",
+    "digivolutionCost": "1",
+    "color": "Red"
+  },
+  {
+    "name": "Zubamon",
+    "setNumber": "BT3-008",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "1000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Red"
+  },
+  {
+    "name": "Hawkmon",
+    "setNumber": "BT3-009",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "4000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Red"
+  },
+  {
+    "name": "ZubaEagermon",
+    "setNumber": "BT3-010",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "4",
+    "digivolutionCost": "2",
+    "color": "Red"
+  },
+  {
+    "name": "Greymon",
+    "setNumber": "BT3-011",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Red"
+  },
+  {
+    "name": "Aquilamon",
+    "setNumber": "BT3-012",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "5000",
+    "playCost": "6",
+    "digivolutionCost": "2",
+    "color": "Red"
+  },
+  {
+    "name": "Duramon",
+    "setNumber": "BT3-013",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "6",
+    "digivolutionCost": "3",
+    "color": "Red"
+  },
+  {
+    "name": "Silphymon",
+    "setNumber": "BT3-014",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "7",
+    "digivolutionCost": "3",
+    "color": "Red"
+  },
+  {
+    "name": "MetalGreymon",
+    "setNumber": "BT3-015",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "8",
+    "digivolutionCost": "3",
+    "color": "Red"
+  },
+  {
+    "name": "Durandamon",
+    "setNumber": "BT3-016",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "10",
+    "digivolutionCost": "3",
+    "color": "Red"
+  },
+  {
+    "name": "Valkyrimon",
+    "setNumber": "BT3-017",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "9000",
+    "playCost": "11",
+    "digivolutionCost": "3",
+    "color": "Red"
+  },
+  {
+    "name": "BlitzGreymon",
+    "setNumber": "BT3-018",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "12",
+    "digivolutionCost": "4",
+    "color": "Red"
+  },
+  {
+    "name": "RagnaLoardmon",
+    "setNumber": "BT3-019",
+    "stage": "Mega",
+    "level": "7",
+    "dp": "14000",
+    "playCost": "14",
+    "digivolutionCost": "3",
+    "color": "Red"
+  },
+  {
+    "name": "Patamon",
+    "setNumber": "BT3-020",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "4000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Blue"
+  },
+  {
+    "name": "Veemon",
+    "setNumber": "BT3-021",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "2000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Blue"
+  },
+  {
+    "name": "Penguinmon",
+    "setNumber": "BT3-022",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "5000",
+    "playCost": "3",
+    "digivolutionCost": "1",
+    "color": "Blue"
+  },
+  {
+    "name": "Angemon",
+    "setNumber": "BT3-023",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "3000",
+    "playCost": "4",
+    "digivolutionCost": "2",
+    "color": "Blue"
+  },
+  {
+    "name": "Airdramon",
+    "setNumber": "BT3-024",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Blue"
+  },
+  {
+    "name": "ExVeemon",
+    "setNumber": "BT3-025",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Blue"
+  },
+  {
+    "name": "MagnaAngemon",
+    "setNumber": "BT3-026",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "6",
+    "digivolutionCost": "3",
+    "color": "Blue"
+  },
+  {
+    "name": "Paildramon",
+    "setNumber": "BT3-027",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "7",
+    "digivolutionCost": "3",
+    "color": "Blue"
+  },
+  {
+    "name": "Bastemon",
+    "setNumber": "BT3-028",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "8000",
+    "playCost": "7",
+    "digivolutionCost": "2",
+    "color": "Blue"
+  },
+  {
+    "name": "Goldramon",
+    "setNumber": "BT3-029",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "11000",
+    "playCost": "11",
+    "digivolutionCost": "3",
+    "color": "Blue"
+  },
+  {
+    "name": "Imperialdramon Dragon Mode",
+    "setNumber": "BT3-031",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "13",
+    "digivolutionCost": "5",
+    "color": "Blue"
+  },
+  {
+    "name": "Armadillomon",
+    "setNumber": "BT3-032",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "4000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Yellow"
+  },
+  {
+    "name": "Salamon",
+    "setNumber": "BT3-033",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "1000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Yellow"
+  },
+  {
+    "name": "Lopmon",
+    "setNumber": "BT3-034",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "2000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Yellow"
+  },
+  {
+    "name": "Gatomon",
+    "setNumber": "BT3-035",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "3000",
+    "playCost": "4",
+    "digivolutionCost": "2",
+    "color": "Yellow"
+  },
+  {
+    "name": "Ankylomon",
+    "setNumber": "BT3-036",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Yellow"
+  },
+  {
+    "name": "Turuiemon",
+    "setNumber": "BT3-037",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "6000",
+    "playCost": "6",
+    "digivolutionCost": "1",
+    "color": "Yellow"
+  },
+  {
+    "name": "Antylamon",
+    "setNumber": "BT3-038",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "8000",
+    "playCost": "7",
+    "digivolutionCost": "2",
+    "color": "Yellow"
+  },
+  {
+    "name": "Angewomon",
+    "setNumber": "BT3-039",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "6000",
+    "playCost": "7",
+    "digivolutionCost": "3",
+    "color": "Yellow"
+  },
+  {
+    "name": "Shakkoumon",
+    "setNumber": "BT3-040",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "8",
+    "digivolutionCost": "3",
+    "color": "Yellow"
+  },
+  {
+    "name": "Cherubimon",
+    "setNumber": "BT3-041",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "11000",
+    "playCost": "11",
+    "digivolutionCost": "3",
+    "color": "Yellow"
+  },
+  {
+    "name": "ClavisAngemon",
+    "setNumber": "BT3-042",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "10000",
+    "playCost": "12",
+    "digivolutionCost": "3",
+    "color": "Yellow"
+  },
+  {
+    "name": "Aruraumon",
+    "setNumber": "BT3-044",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "5000",
+    "playCost": "2",
+    "digivolutionCost": "2",
+    "color": "Green"
+  },
+  {
+    "name": "Kunemon",
+    "setNumber": "BT3-045",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "4000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Green"
+  },
+  {
+    "name": "Terriermon",
+    "setNumber": "BT3-046",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "2000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Green"
+  },
+  {
+    "name": "Wormmon",
+    "setNumber": "BT3-047",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "1000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Green"
+  },
+  {
+    "name": "Gargomon",
+    "setNumber": "BT3-048",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "5",
+    "digivolutionCost": "1",
+    "color": "Green"
+  },
+  {
+    "name": "Flymon",
+    "setNumber": "BT3-049",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Green"
+  },
+  {
+    "name": "Stingmon",
+    "setNumber": "BT3-050",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "5000",
+    "playCost": "6",
+    "digivolutionCost": "1",
+    "color": "Green"
+  },
+  {
+    "name": "Dokugumon",
+    "setNumber": "BT3-051",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "5000",
+    "playCost": "6",
+    "digivolutionCost": "2",
+    "color": "Green"
+  },
+  {
+    "name": "Rapidmon",
+    "setNumber": "BT3-052",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "6000",
+    "playCost": "6",
+    "digivolutionCost": "2",
+    "color": "Green"
+  },
+  {
+    "name": "JewelBeemon",
+    "setNumber": "BT3-053",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "10000",
+    "playCost": "7",
+    "digivolutionCost": "3",
+    "color": "Green"
+  },
+  {
+    "name": "Blossomon",
+    "setNumber": "BT3-054",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "7",
+    "digivolutionCost": "3",
+    "color": "Green"
+  },
+  {
+    "name": "Dinobeemon",
+    "setNumber": "BT3-055",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "8",
+    "digivolutionCost": "3",
+    "color": "Green"
+  },
+  {
+    "name": "Ceresmon",
+    "setNumber": "BT3-056",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "12",
+    "digivolutionCost": "5",
+    "color": "Green"
+  },
+  {
+    "name": "MegaGargomon",
+    "setNumber": "BT3-057",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "11000",
+    "playCost": "12",
+    "digivolutionCost": "4",
+    "color": "Green"
+  },
+  {
+    "name": "BanchoStingmon",
+    "setNumber": "BT3-058",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "9000",
+    "playCost": "12",
+    "digivolutionCost": "3",
+    "color": "Green"
+  },
+  {
+    "name": "Commandramon",
+    "setNumber": "BT3-059",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "3000",
+    "playCost": "2",
+    "digivolutionCost": "0",
+    "color": "Black"
+  },
+  {
+    "name": "Psychemon",
+    "setNumber": "BT3-060",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "5000",
+    "playCost": "3",
+    "digivolutionCost": "1",
+    "color": "Black"
+  },
+  {
+    "name": "Ludomon",
+    "setNumber": "BT3-062",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "1000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Black"
+  },
+  {
+    "name": "Sukamon",
+    "setNumber": "BT3-063",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "1000",
+    "playCost": "3",
+    "digivolutionCost": "2",
+    "color": "Black"
+  },
+  {
+    "name": "TiaLudomon",
+    "setNumber": "BT3-064",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "4",
+    "digivolutionCost": "2",
+    "color": "Black"
+  },
+  {
+    "name": "Gururumon",
+    "setNumber": "BT3-065",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Black"
+  },
+  {
+    "name": "Clockmon",
+    "setNumber": "BT3-066",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "5000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Black"
+  },
+  {
+    "name": "Tankmon",
+    "setNumber": "BT3-067",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "6000",
+    "playCost": "6",
+    "digivolutionCost": "1",
+    "color": "Black"
+  },
+  {
+    "name": "Giromon",
+    "setNumber": "BT3-068",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "6",
+    "digivolutionCost": "3",
+    "color": "Black"
+  },
+  {
+    "name": "RaijiLudomon",
+    "setNumber": "BT3-069",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "6",
+    "digivolutionCost": "3",
+    "color": "Black"
+  },
+  {
+    "name": "Etemon",
+    "setNumber": "BT3-070",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "6000",
+    "playCost": "7",
+    "digivolutionCost": "3",
+    "color": "Black"
+  },
+  {
+    "name": "MetalMamemon",
+    "setNumber": "BT3-071",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "8",
+    "digivolutionCost": "3",
+    "color": "Black"
+  },
+  {
+    "name": "BryweLudramon",
+    "setNumber": "BT3-072",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "10",
+    "digivolutionCost": "3",
+    "color": "Black"
+  },
+  {
+    "name": "CresGarurumon",
+    "setNumber": "BT3-073",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "11000",
+    "playCost": "11",
+    "digivolutionCost": "4",
+    "color": "Black"
+  },
+  {
+    "name": "Craniamon",
+    "setNumber": "BT3-075",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "13",
+    "digivolutionCost": "4",
+    "color": "Black"
+  },
+  {
+    "name": "Candlemon",
+    "setNumber": "BT3-076",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "3000",
+    "playCost": "2",
+    "digivolutionCost": "0",
+    "color": "Purple"
+  },
+  {
+    "name": "Gazimon",
+    "setNumber": "BT3-077",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "2000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Purple"
+  },
+  {
+    "name": "Shamanmon",
+    "setNumber": "BT3-078",
+    "stage": "Rookie",
+    "level": "3",
+    "dp": "4000",
+    "playCost": "3",
+    "digivolutionCost": "0",
+    "color": "Purple"
+  },
+  {
+    "name": "Saberdramon",
+    "setNumber": "BT3-080",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "3000",
+    "playCost": "4",
+    "digivolutionCost": "2",
+    "color": "Purple"
+  },
+  {
+    "name": "BlackGatomon",
+    "setNumber": "BT3-082",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "4000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Purple"
+  },
+  {
+    "name": "Meramon",
+    "setNumber": "BT3-083",
+    "stage": "Champion",
+    "level": "4",
+    "dp": "5000",
+    "playCost": "5",
+    "digivolutionCost": "1",
+    "color": "Purple"
+  },
+  {
+    "name": "SkullMeramon",
+    "setNumber": "BT3-085",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "6000",
+    "playCost": "5",
+    "digivolutionCost": "2",
+    "color": "Purple"
+  },
+  {
+    "name": "Arukenimon",
+    "setNumber": "BT3-086",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "6000",
+    "playCost": "7",
+    "digivolutionCost": "3",
+    "color": "Purple"
+  },
+  {
+    "name": "Mummymon",
+    "setNumber": "BT3-087",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "7000",
+    "playCost": "7",
+    "digivolutionCost": "3",
+    "color": "Purple"
+  },
+  {
+    "name": "LadyDevimon",
+    "setNumber": "BT3-088",
+    "stage": "Ultimate",
+    "level": "5",
+    "dp": "8000",
+    "playCost": "8",
+    "digivolutionCost": "3",
+    "color": "Purple"
+  },
+  {
+    "name": "Mastemon",
+    "setNumber": "BT3-090",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "12",
+    "digivolutionCost": "4",
+    "color": "Purple"
+  },
+  {
+    "name": "MaloMyotismon",
+    "setNumber": "BT3-092",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "13",
+    "digivolutionCost": "5",
+    "color": "Purple"
+  },
+  {
+    "name": "Imperialdramon Dragon Mode",
+    "setNumber": "BT3-111",
+    "stage": "Mega",
+    "level": "6",
+    "dp": "12000",
+    "playCost": "13",
+    "digivolutionCost": "5",
+    "color": "Green"
+  },
+  {
+    "name": "Omnimon Alter-S",
+    "setNumber": "BT3-112",
+    "stage": "Mega",
+    "level": "7",
+    "dp": "15000",
+    "playCost": "15",
+    "digivolutionCost": "6",
+    "color": "White"
+  }
+]

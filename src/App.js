@@ -1,10 +1,13 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import st1 from './data/json/st-1.json';
+import st0 from './data/json/st-1.json';
+import bt01 from './data/json/bt01-03.1.5.json';
 import { useState } from 'react';
 import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import { ArrowDown, ArrowUp, ArrowUpCircleFill, Check, CheckCircleFill, XCircleFill } from 'react-bootstrap-icons';
+
+const st1 = st0.concat(bt01);
 
 const a = Math.floor(Math.random() * st1.length);
 
@@ -12,8 +15,9 @@ function App() {
   const target = st1[a];
   const [name, setName] = useState("");
   const [level, setLevel] = useState("");
-  const [levelIcon, setLevelIcon] = useState();
-  const [dpIcon, setDpIcon] = useState();
+  const [color, setColor] = useState("");
+  const [set, setSet] = useState("");
+  const [stage, setStage] = useState("");
   const [dp, setDp] = useState("");
   const [correct, setCorrect] = useState(false);
   const [attempts, setAttempts] = useState(1);
@@ -31,42 +35,56 @@ function App() {
     "dp": dp,
   }
 
+  const clearAttributes = () => {
+    setColor("");
+    setDp("");
+    setLevel("");
+    setStage("");
+  }
+
   const onNameChange = (value) => {
-    setName(value);
+    if (value && value.length > 0) {
+      const [name, set] = value.split(" | ");
+      setName(name);
+      setSet(set);
+      const digi = st1.filter((digimon) =>
+        digimon.name === name && digimon.setNumber === set
+      );
+      if (digi.length === 0) {
+        clearAttributes();
+      } else {
+        setLevel(digi[0].level);
+        setDp(digi[0].dp);
+        setColor(digi[0].color);
+        setStage(digi[0].stage);
+      }
+    }
+    else if (!value || (value && value.length === 0)) {
+      clearAttributes();
+    }
   }
 
   const inputChangeHandler = (field, value) => {
-    console.log(value);
     filter[field] = value;
     funcs[field](value);
   }
 
   const checkName = () => {
     setAttempts(attempts + 1);
-    let correctText = "";
-    if (name.toLowerCase() === target.name.toLowerCase()){ 
+    if (name.toLowerCase() === target.name.toLowerCase() && set === target.setNumber) {
       setCorrect(true);
-      correctText = "Correct!";
     }
     else {
       setCorrect(false);
-      if (parseInt(level) > parseInt(target.level))
-        setLevelIcon(<ArrowDown color='red'/>);
-      else if (parseInt(level) < parseInt(target.level))
-        setLevelIcon(<ArrowUp color='red'/>);
-      else 
-        setLevelIcon(<CheckCircleFill color='green' />);
-
-      if (parseInt(dp) > parseInt(target.dp))
-        setDpIcon(<ArrowDown color='red'/>);
-      else if (parseInt(dp) < parseInt(target.dp))
-        setDpIcon(<ArrowUpCircleFill color='red' />);
-      else 
-        setDpIcon(<CheckCircleFill color='green' />);
-      correctText = "Incorrect";
     }
-
-    const guess = "Attempt " + attempts + ": " + name + " : " + correctText;
+    const guess = {
+      name: [name, name === target.name],
+      color: [color, color === target.color],
+      stage: [stage, stage === target.stage],
+      level: [level, level === target.level, level > target.level ? "↓" : "↑"],
+      dp: [dp, dp === target.dp, dp > target.dp ? "↓" : "↑"],
+      set: [set, set === target.setNumber],
+    }
     guesses.push(guess);
   }
 
@@ -77,18 +95,18 @@ function App() {
     }
   };
 
-  console.log(guesses);
-
-  const filteredDigimon = st1.filter((digimon) => {
+  /*const filteredDigimon = st1.filter((digimon) => {
     for (const key in filter) {
       if (filter[key] && digimon[key] !== filter[key])
         return false;
     }
     return true;
   });
-  const names = filteredDigimon.map((digimon) => digimon.name);
-  const levels = [...new Set(filteredDigimon.map((digimon) => digimon.level))];
-  const dps = [...new Set(filteredDigimon.map((digimon) => digimon.dp))];
+  */
+  const names = st1.map((digimon) => digimon.name + " | " + digimon.setNumber);
+  console.log("Guesses: ", guesses);
+  //const levels = [...new Set(filteredDigimon.map((digimon) => digimon.level))];
+  //const dps = [...new Set(filteredDigimon.map((digimon) => digimon.dp))];
 
   return (
     <div className="App">
@@ -109,46 +127,57 @@ function App() {
                   />
                 </Form.Group>
               </Col>
+            </Row>
+            <Row>
               <Col>
-                <Form.Group>
-                  <Form.Label>Set</Form.Label>
-                  <Form.Control />
-                </Form.Group>
+                <div>Color:</div>
+                <div>{color.toUpperCase()}</div>
               </Col>
               <Col>
-                <Form.Group>
-                  <Form.Label>Level</Form.Label>
-                  <Form.Label>{levelIcon}</Form.Label>
-                  <Typeahead
-                    selected={level}
-                    options={levels}
-                    placeholder="Level"
-                    onChange={(option) => inputChangeHandler("level", option[0])}
-                    onInputChange={(e) => inputChangeHandler("level", e)}
-                  />
-                </Form.Group>
+                <div>Stage:</div>
+                <div>{stage.toUpperCase()}</div>
               </Col>
               <Col>
-                <Form.Group>
-                  <Form.Label>DP</Form.Label>
-                  <Form.Label>{dpIcon}</Form.Label>
-                  <Typeahead
-                    options={dps}
-                    placeholder="DP"
-                    onChange={(option) => inputChangeHandler("dp", option[0])}
-                    onInputChange={(e) => inputChangeHandler("dp", e)}
-                  />
-                </Form.Group>
+                <div>Level:</div>
+                <div>{level.toUpperCase()}</div>
+              </Col>
+              <Col>
+                <div>DP:</div>
+                <div>{dp.toUpperCase()}</div>
               </Col>
             </Row>
           </Form>
           <Button onClick={checkName}>
             Check!
           </Button>
+
+          <table className='table'>
+            <tr style={{ color: 'white' }}>
+              <th>Name</th>
+              <th>Set</th>
+              <th>Color</th>
+              <th>Stage</th>
+              <th>Level</th>
+              <th>DP</th>
+            </tr>
+            {guesses.map((guess, i) => {
+              return (
+                <tr>
+                  <td style={{ color: guess.name[1] ? 'green' : 'red' }}>{guess.name[0]}</td>
+                  <td style={{ color: guess.set[1] ? 'green' : 'red' }}>{guess.set[0]}</td>
+                  <td style={{ color: guess.color[1] ? 'green' : 'red' }}>{guess.color[0]}</td>
+                  <td style={{ color: guess.stage[1] ? 'green' : 'red' }}>{guess.stage[0]}</td>
+                  <td style={{ color: guess.level[1] ? 'green' : 'red' }}>
+                    {guess.level[0]}{guess.level[1] ? "" : guess.level[2]}
+                  </td>
+                  <td style={{ color: guess.dp[1] ? 'green' : 'red' }}>
+                    {guess.dp[0]}{guess.dp[1] ? "" : guess.dp[2]}
+                  </td>
+                </tr>
+              )
+            })}
+          </table>
         </Container>
-        {guesses.map((guess, i) => {
-          return <p>{guess}</p>
-        })}
       </header>
     </div>
   );
