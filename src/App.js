@@ -5,6 +5,7 @@ import bt01 from './data/json/bt01-03.1.5.json';
 import { useState } from 'react';
 import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
+import GuessTable from './components/GuessTable';
 
 const st1 = st0.concat(bt01);
 
@@ -64,13 +65,13 @@ function App() {
     }
     const [s, n] = target.setNumber.split("-");
     const guess = {
-      name: [name, name === target.name],
-      color: [color, color === target.color],
-      stage: [stage, stage === target.stage],
-      level: [level, level === target.level, level > target.level ? "↓" : "↑"],
-      dp: [dp, dp === target.dp, dp > target.dp ? "↓" : "↑"],
+      name: [name, name.toLowerCase() === target.name.toLowerCase()],
+      color: [color, color.toLowerCase() === target.color.toLowerCase()],
+      stage: [stage, stage.toLowerCase() === target.stage.toLowerCase()],
+      level: [level, level === target.level, parseInt(level) > parseInt(target.level) ? "↓" : "↑"],
+      dp: [dp, dp === target.dp, parseInt(dp) > parseInt(target.dp) ? "↓" : "↑"],
       set: [set, set === s],
-      num: [num, num === n, num > n ? "↓" : "↑"],
+      num: [num, num === n, parseInt(num) > parseInt(n) ? "↓" : "↑"],
     }
     guesses.push(guess);
   }
@@ -82,18 +83,7 @@ function App() {
     }
   };
 
-  /*const filteredDigimon = st1.filter((digimon) => {
-    for (const key in filter) {
-      if (filter[key] && digimon[key] !== filter[key])
-        return false;
-    }
-    return true;
-  });
-  */
   const names = st1.map((digimon) => digimon.name + " | " + digimon.setNumber);
-  console.log("Guesses: ", guesses);
-  //const levels = [...new Set(filteredDigimon.map((digimon) => digimon.level))];
-  //const dps = [...new Set(filteredDigimon.map((digimon) => digimon.dp))];
 
   return (
     <div className="App">
@@ -137,37 +127,9 @@ function App() {
           <Button onClick={checkName}>
             Check!
           </Button>
-
-          <table className='table'>
-            <tr style={{ color: 'white' }}>
-              <th>Name</th>
-              <th>Set</th>
-              <th>Number</th>
-              <th>Color</th>
-              <th>Stage</th>
-              <th>Level</th>
-              <th>DP</th>
-            </tr>
-            {guesses.map((guess, i) => {
-              return (
-                <tr>
-                  <td style={{ color: guess.name[1] ? 'green' : 'red' }}>{guess.name[0]}</td>
-                  <td style={{ color: guess.set[1] ? 'green' : 'red' }}>{guess.set[0]}</td>
-                  <td style={{ color: guess.num[1] ? 'green' : 'red' }}>
-                    {guess.num[0]}{guess.num[1] ? "" : guess.num[2]}
-                  </td>
-                  <td style={{ color: guess.color[1] ? 'green' : 'red' }}>{guess.color[0]}</td>
-                  <td style={{ color: guess.stage[1] ? 'green' : 'red' }}>{guess.stage[0]}</td>
-                  <td style={{ color: guess.level[1] ? 'green' : 'red' }}>
-                    {guess.level[0]}{guess.level[1] ? "" : guess.level[2]}
-                  </td>
-                  <td style={{ color: guess.dp[1] ? 'green' : 'red' }}>
-                    {guess.dp[0]}{guess.dp[1] ? "" : guess.dp[2]}
-                  </td>
-                </tr>
-              )
-            })}
-          </table>
+          <GuessTable
+            guesses={guesses}
+          />
         </Container>
       </header>
     </div>
