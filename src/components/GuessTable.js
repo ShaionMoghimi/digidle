@@ -26,7 +26,7 @@ export default function GuessTable({ guesses }) {
             <Data correct={guess.num[1]}>{guess.num[0]}{guess.num[1] ? "" : guess.num[2]}</Data>
             <Data correct={guess.color[1]}>{capitalizeFirst(guess.color[0])}</Data>
             <Data correct={guess.stage[1]}>{capitalizeFirst(guess.stage[0])}</Data>
-            <Data correct={guess.level[1]}>{guess.level[0]}{guess.level[1] ? "" : guess.num[2]}</Data>
+            <Data correct={guess.level[1]}>{guess.level[0]}{guess.level[1] ? "" : guess.level[2]}</Data>
             <Data correct={guess.dp[1]}>{guess.dp[0]}{guess.dp[1] ? "" : guess.dp[2]}</Data>
           </tr>
         )

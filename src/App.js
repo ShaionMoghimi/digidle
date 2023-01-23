@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import GuessTable from './components/GuessTable';
+import { capitalizeFirst } from './utils/utils';
 
 const st1 = st0.concat(bt01);
 
@@ -20,7 +21,6 @@ function App() {
   const [set, setSet] = useState("");
   const [stage, setStage] = useState("");
   const [dp, setDp] = useState("");
-  const [correct, setCorrect] = useState(false);
   const [attempts, setAttempts] = useState(1);
   const [guesses] = useState([]);
 
@@ -57,12 +57,6 @@ function App() {
 
   const checkName = () => {
     setAttempts(attempts + 1);
-    if (name.toLowerCase() === target.name.toLowerCase() && set === target.setNumber) {
-      setCorrect(true);
-    }
-    else {
-      setCorrect(false);
-    }
     const [s, n] = target.setNumber.split("-");
     const guess = {
       name: [name, name.toLowerCase() === target.name.toLowerCase()],
@@ -83,7 +77,8 @@ function App() {
     }
   };
 
-  const names = st1.map((digimon) => digimon.name + " | " + digimon.setNumber);
+  const names = st1.map((digimon) => digimon.name + " | " + digimon.setNumber + " | " + capitalizeFirst(digimon.color) + " | "
+    + capitalizeFirst(digimon.stage) + " | " + digimon.level + " | " + digimon.dp);
 
   return (
     <div className="App">
@@ -103,24 +98,6 @@ function App() {
                     onKeyDown={checkEnter}
                   />
                 </Form.Group>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <div>Color:</div>
-                <div>{color.toUpperCase()}</div>
-              </Col>
-              <Col>
-                <div>Stage:</div>
-                <div>{stage.toUpperCase()}</div>
-              </Col>
-              <Col>
-                <div>Level:</div>
-                <div>{level.toUpperCase()}</div>
-              </Col>
-              <Col>
-                <div>DP:</div>
-                <div>{dp.toUpperCase()}</div>
               </Col>
             </Row>
           </Form>
